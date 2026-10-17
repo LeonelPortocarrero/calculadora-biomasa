@@ -1,52 +1,80 @@
 # Calculadora de Biomasa y Biogás
 
-## Descripción del proyecto
+## Descripción
 
-Este proyecto consiste en desarrollar una calculadora web que permita estimar la cantidad de biomasa disponible, la producción de biogás y su potencial energético a partir de residuos orgánicos de origen animal.
+Este proyecto consiste en una aplicación web desarrollada en Python que permite calcular la cantidad de biomasa disponible y estimar la producción de biogás a partir de residuos orgánicos de origen animal.
 
-La aplicación está orientada a la Ingeniería de la Energía y busca demostrar cómo la programación puede ayudar a evaluar el aprovechamiento de recursos renovables.
+La calculadora está orientada a la Ingeniería de la Energía y busca demostrar cómo la programación puede utilizarse para analizar el aprovechamiento energético de la biomasa.
 
 ## Objetivo
 
-Desarrollar una herramienta interactiva que permita realizar cálculos básicos relacionados con la producción de biogás mediante digestión anaerobia.
+Desarrollar una aplicación interactiva que permita estimar la producción diaria de biogás y su potencial energético mediante cálculos matemáticos implementados en Python.
 
-## Funcionalidades del proyecto
+## Funcionalidades
 
-- Calcular la cantidad total de biomasa en kilogramos por día.
+- Ingresar cantidades de estiércol de cuyes, cerdos y vacas.
+- Calcular la biomasa total disponible en kg/día.
 - Estimar la producción diaria de biogás en litros y metros cúbicos.
-- Calcular el potencial energético aproximado en kWh.
-- Trabajar con residuos de cuyes, cerdos y ganado vacuno.
-- Mostrar resultados de manera automática.
+- Calcular el potencial energético térmico en kWh/día.
+- Modificar los rendimientos estimados de biogás.
+- Visualizar los resultados automáticamente al ejecutar el cálculo.
 
 ## Tecnologías utilizadas
 
-- **HTML:** estructura de la página web.
-- **CSS:** diseño y presentación visual.
-- **JavaScript:** cálculos y funcionamiento interactivo.
-- **GitHub Pages:** publicación de la página web.
+**Python:** lenguaje de programación empleado para desarrollar los cálculos.
 
-## Fórmulas principales
+**Streamlit:** biblioteca utilizada para crear la interfaz interactiva de la aplicación web.
 
-**Biomasa total:**
+**GitHub:** plataforma utilizada para almacenar y compartir el código fuente.
 
-Biomasa total = Suma de las masas diarias de residuos orgánicos.
+**Streamlit Community Cloud:** servicio previsto para publicar la aplicación en internet.
 
-**Producción estimada de biogás:**
+## Fórmulas utilizadas
 
-Biogás = Suma de (masa diaria de cada residuo × rendimiento estimado correspondiente).
+### Biomasa total
 
-**Potencial energético:**
+Biomasa total = Biomasa de cuyes + Biomasa de cerdos + Biomasa de vacas.
+
+### Producción de biogás
+
+Biogás total = Σ (masa diaria de cada residuo × rendimiento específico).
+
+### Conversión a litros
+
+Biogás (L/día) = Biogás (m³/día) × 1000.
+
+### Potencial energético
 
 Energía (kWh/día) = Biogás (m³/día) × Poder calorífico (kWh/m³).
 
-Los resultados son estimaciones teóricas que dependen de las características de los residuos y las condiciones de digestión anaerobia.
+Los rendimientos iniciales son valores ilustrativos ajustables. Los resultados representan estimaciones teóricas y no sustituyen un análisis experimental de la biomasa.
 
-## Aplicación en Ingeniería de la Energía
+## Archivos del proyecto
 
-Esta calculadora permitirá comprender cómo los residuos orgánicos pueden utilizarse como materia prima para producir biogás, una fuente renovable de energía aprovechable principalmente para generar calor o electricidad.
+- **app.py:** programa principal desarrollado en Python.
+- **requirements.txt:** contiene las dependencias necesarias para ejecutar la aplicación.
+- **README.md:** documentación del proyecto.
+
+## Ejecución del programa
+
+Para ejecutar el proyecto localmente se necesita Python y las bibliotecas indicadas en requirements.txt.
+
+Instalar las dependencias:
+
+`pip install -r requirements.txt`
+
+Ejecutar la aplicación:
+
+`streamlit run app.py`
+
+La aplicación se abrirá en el navegador web.
+
+## Importancia en Ingeniería de la Energía
+
+El proyecto permite relacionar los conocimientos de programación con el aprovechamiento de energías renovables, especialmente la conversión de residuos orgánicos en biogás mediante digestión anaerobia.
 
 ## Autor
 
 **LeonelPortocarrero**
 
-Proyecto académico de Lenguaje de programación. 
+Proyecto académico de Lenguaje de Programación — Ingeniería de la Energía.
