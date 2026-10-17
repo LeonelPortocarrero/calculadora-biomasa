@@ -78,3 +78,4 @@ El proyecto permite relacionar los conocimientos de programación con el aprovec
 **LeonelPortocarrero**
 
 Proyecto académico de Lenguaje de Programación — Ingeniería de la Energía.
+
